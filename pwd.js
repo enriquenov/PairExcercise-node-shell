@@ -1,1 +1,3 @@
-module.exports = ()=>{process.stdout.write(process.cwd());};
+module.exports = (done) => {
+  done(process.cwd());
+};
