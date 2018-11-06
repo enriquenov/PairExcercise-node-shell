@@ -2,9 +2,9 @@ const fs = require('fs');
 
 module.exports = () =>{fs.readdir('./', 'utf8', (err, files)=>{
   if(err){
-    throw err
+    throw err;
   } else{
-    process.stdout.write(files.join('\n'))
-    process.stdout.write('\nprompt >')
+    process.stdout.write(files.join('\n'));
+    process.stdout.write('\n\nprompt > ');
   }
-})}
+});};
